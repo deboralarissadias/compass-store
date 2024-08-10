@@ -19,7 +19,95 @@
 
         </div>
     </div>
-   
+
+    <header class="header-bottom">
+        <div class="header-bottom-container">
+            <img src="assets/images/logo-shopco.svg" alt="logo-shop" class="logo-shop">
+            <div class="navbar">
+                <div class="navbar__link navbar__link-toggle">
+                    <i class="icon-bar">
+                        <img src="./assets/icons/bar.svg" alt="bar" width="20">
+                    </i>
+                </div>
+                <nav class="navbar__items">
+                    <div class="navbar__link navbar__link--dropdown">
+                        <div>
+                            Shop 
+                            <i class="chevron-down">
+                                <img src="./assets/icons/chevron-down.svg" alt="chevron-down" width="15">
+                            </i>
+                        </div>
+                        <div class="dropdown-content">
+                            <a href="#">Sublink 1</a>
+                            <a href="#">Sublink 2</a>
+                        </div>
+                    </div>
+                    <div class="navbar__link">
+                        
+                        <a href="#">On Sale</a>
+                    </div>
+                    <div class="navbar__link">
+                        <a href="#">New Arrivals</a>
+                    </div>
+                    <div class="navbar__link">
+                        <a href="#">Brands</a>
+                    </div>
+                </nav>
+            </div>
+        
+            <div class="search-container">
+                <i class="icon-search">
+                    <img src="./assets/icons/search-light.svg" alt="search" width="18">
+                </i>
+                <input type="text" class="search-input" placeholder="Search for products..." />
+    
+            </div>
+            <div class="icons-container">
+                <i class="icon-search-dark" onclick="openSearch()">
+                    <a href="#"><img src="./assets/icons/search-dark.svg" alt="search" width="20"></a>
+                </i>
+                <i class="shopping-cart">
+                    <a href="#"><img src="./assets/icons/cart.svg" alt="shopping-cart" width="20"></a>
+                </i>
+                <i class="user-circle">
+                    <a href="#"><img src="./assets/icons/user.svg" alt="user-circle" width="20"></a>
+                </i>
+            </div>
+        </div>
+    </header>
+    <div class="search-container search-container-mobile">
+        <input type="text" class="search-input search-input-mobile" placeholder="Search for products..." />
+    </div>
+
+    <section class="banner-home-page">
+        <div class="banner-info-container">
+            <h1>
+                FIND CLOTHES THAT MATCHES YOUR STYLE
+            </h1>
+            <p>
+                Browse through our diverse range of meticulously crafted garments, designed to bring out your individuality and cater to your sense of style.
+            </p>
+            <button class="btn-shop-now">
+                Shop Now
+            </button>
+            <div>
+                <div>
+                    <p>200+</p>
+                    <p>International Brands</p>
+                </div>
+                <div>
+                    <p>2,000+</p>
+                    <p>High-Quality Products</p>
+                </div>
+                <div>
+                    <p>30,000+</p>
+                    <p>Happy Customers</p>
+                </div>
+            </div>
+        </div>
+        <div class="horizontal-separator"></div>
+    </section>
+    
     <script src="script.js"></script>
 </body>
 </html>
