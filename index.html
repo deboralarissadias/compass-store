@@ -26,7 +26,7 @@
             <div class="navbar">
                 <div class="navbar__link navbar__link-toggle">
                     <i class="icon-bar">
-                        <img src="./assets/icons/bar.svg" alt="bar" width="20">
+                        <img src="./assets/images/icons/bar.svg" alt="bar" width="20">
                     </i>
                 </div>
                 <nav class="navbar__items">
@@ -34,7 +34,7 @@
                         <div>
                             Shop 
                             <i class="chevron-down">
-                                <img src="./assets/icons/chevron-down.svg" alt="chevron-down" width="15">
+                                <img src="./assets/images/icons/chevron-down.svg" alt="chevron-down" width="15">
                             </i>
                         </div>
                         <div class="dropdown-content">
@@ -57,20 +57,20 @@
         
             <div class="search-container">
                 <i class="icon-search">
-                    <img src="./assets/icons/search-light.svg" alt="search" width="18">
+                    <img src="./assets/images/icons/search-light.svg" alt="search" width="18">
                 </i>
                 <input type="text" class="search-input" placeholder="Search for products..." />
     
             </div>
             <div class="icons-container">
                 <i class="icon-search-dark" onclick="openSearch()">
-                    <a href="#"><img src="./assets/icons/search-dark.svg" alt="search" width="20"></a>
+                    <a href="#"><img src="./assets/images/icons/search-dark.svg" alt="search" width="20"></a>
                 </i>
                 <i class="shopping-cart">
-                    <a href="#"><img src="./assets/icons/cart.svg" alt="shopping-cart" width="20"></a>
+                    <a href="#"><img src="./assets/images/icons/cart.svg" alt="shopping-cart" width="20"></a>
                 </i>
                 <i class="user-circle">
-                    <a href="#"><img src="./assets/icons/user.svg" alt="user-circle" width="20"></a>
+                    <a href="#"><img src="./assets/images/icons/user.svg" alt="user-circle" width="20"></a>
                 </i>
             </div>
         </div>
@@ -80,43 +80,102 @@
     </div>
 
     <section class="banner-home-page">
-        <div class="banner-info-container">
-            <h1 class="banner-title">
-                FIND CLOTHES THAT MATCHES YOUR STYLE
-            </h1>
-            <p class="banner-description">
-                Browse through our diverse range of meticulously crafted garments, designed to bring out your individuality and cater to your sense of style.
-            </p>
-            <button class="btn-shop-now">
-                Shop Now
-            </button>
-            <div class="stats-container">
-                <div class="stat">
-                    <p id="stat1" class="stat-number">0+</p>
-                    <p class="stat-description">International Brands</p>
-                </div>
-                <div class="stat">
-                    <p id="stat2" class="stat-number">0+</p>
-                    <p class="stat-description">High-Quality Products</p>
-                </div>
-                <div class="stat">
-                    <p id="stat3" class="stat-number">0+</p>
-                    <p class="stat-description">Happy Customers</p>
+        <div class="banner-home-page-container">
+            <div class="banner-info-container">
+                <h1 class="banner-title">
+                    FIND CLOTHES THAT MATCHES YOUR STYLE
+                </h1>
+                <p class="banner-description">
+                    Browse through our diverse range of meticulously crafted garments, designed to bring out your individuality and cater to your sense of style.
+                </p>
+                <button class="btn-shop-now">
+                    Shop Now
+                </button>
+                <div class="stats-container">
+                    <div class="stat">
+                        <p id="stat1" class="stat-number">0+</p>
+                        <p class="stat-description">International Brands</p>
+                    </div>
+                    <div class="vertical-separator separator1"></div>
+                    <div class="stat">
+                        <p id="stat2" class="stat-number">0+</p>
+                        <p class="stat-description">High-Quality Products</p>
+                    </div>
+                    <div class="vertical-separator separator2"></div>
+                    <div class="stat">
+                        <p id="stat3" class="stat-number">0+</p>
+                        <p class="stat-description">Happy Customers</p>
+                    </div>
                 </div>
             </div>
+            <div class="banner-image-container">
+                <img src="./assets/images/home-banner-desktop.png" alt="banner image" class="banner-image">
+            </div>
+            <img src="./assets/images/home-banner-mobile.png" alt="banner" class="banner-image-mobile">
         </div>
-        <div class="horizontal-separator"></div>
     </section>
 
     <section class="brands">
         <div class="brands-container">
-            <img src="./assets/images/brands/brand1.svg" alt="brand">
-            <img src="./assets/images/brands/brand2.svg" alt="brand">
-            <img src="./assets/images/brands/brand3.svg" alt="brand">
-            <img src="./assets/images/brands/brand4.svg" alt="brand">
-            <img src="./assets/images/brands/brand5.svg" alt="brand">
+            <img src="./assets/images/brands/brand1.svg" alt="brand" class="brand1" id="brand1">
+            <img src="./assets/images/brands/brand2.svg" alt="brand" class="brand2" id="brand2">
+            <img src="./assets/images/brands/brand3.svg" alt="brand" class="brand3" id="brand3">
+            <img src="./assets/images/brands/brand4.svg" alt="brand" class="brand4" id="brand4">
+            <img src="./assets/images/brands/brand5.svg" alt="brand" class="brand5" id="brand5">
         </div>
     </section>
+
+    <section class="new-arrivals">
+        <div class="new-arrivals-container">
+            <h1 class="new-arrivals-title">NEW ARRIVALS</h1>
+            <div class="new-arrivals-cards-container" id="new-arrivals-cards-container">
+                <!-- Os cards dos produtos estão sendo renderizados aqui pelo JavaScript -->
+            </div>
+            <button class="btn-view-all">View All</button>
+        </div>
+    </section>
+
+    <section class="top-selling">
+        <div class="top-selling-container">
+            <h1 class="top-selling-title">TOP SELLING</h1>
+            <div class="top-selling-cards-container" id="top-selling-cards-container">
+                <!-- Os cards dos produtos estão sendo renderizados aqui pelo JavaScript -->
+            </div>
+            <button class="btn-view-all">View All</button>
+        </div>
+    </section>
+
+    <section class="dress-style">
+        <div class="dress-style-container">
+            <h1 class="dress-style-title">BROWSE BY DRESS STYLE</h1>
+            <div class="dress-style-buttons-container" >
+                <a href="#"><img class="dress-style-image-casual" src="./assets/images/buttons/casual.png" alt="casual"></a>
+                <a href="#"><img class="dress-style-image-formal" src="./assets/images/buttons/formal.png" alt="formal"></a>
+                <a href="#"><img class="dress-style-image-party" src="./assets/images/buttons/party.png" alt="party"></a>
+                <a href="#"><img class="dress-style-image-gym" src="./assets/images/buttons/gym.png" alt="gym"></a>
+            </div>
+        </div>
+    </section>
+
+    <section class="customer-reviews">
+        <div class="customer-reviews-container">
+            <div class="customer-reviews-header">
+                <h1 class="customer-reviews-title">OUR HAPPY CUSTOMERS</h1>
+                <div class="review-nav-buttons">
+                    <button class="nav-button left">
+                        <img src="./assets/images/icons/arrow-left.svg" alt="Scroll Left">
+                    </button>
+                    <button class="nav-button right">
+                        <img src="./assets/images/icons/arrow-right.svg" alt="Scroll Right">
+                    </button>
+                </div>
+            </div>
+            <div class="customer-reviews-cards-container" id="customer-reviews-cards-container">
+                <!-- Os cards das avaliações dos clientes serão inseridos aqui -->
+            </div>
+        </div>
+    </section>
+    
     
     <script src="script.js"></script>
 </body>

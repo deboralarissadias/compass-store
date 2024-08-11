@@ -26,7 +26,7 @@ body {
 .header-top-container {
     display: flex;
     width: 100%;
-    max-width: 1440px;
+    max-width: 1240px;
     margin-right: auto;
     margin-left: auto;
     justify-content: space-between;
@@ -61,7 +61,7 @@ body {
 .header-bottom-container {
     display: flex;
     width: 100%;
-    max-width: 1440px;
+    max-width: 1240px;
     margin-right: auto;
     margin-left: auto;
     justify-content: space-between;
@@ -90,6 +90,7 @@ body {
 .navbar__link a:hover {
     color: #817d7d;
 }
+
 .navbar__items {
     display: flex;
     gap: 20px;
@@ -143,7 +144,7 @@ body {
     width: 100%;
     max-width: 577px;
     height: 38px;
-    border-radius: 60px;
+    border-radius: 62px;
     justify-content: flex-start;
     align-items: center;
     padding: 0 8px;
@@ -153,7 +154,8 @@ body {
     border: none;
     width: 100%;
     max-width: 577px;
-    height: 38px;
+    height: 30px;
+    border-radius: 62px;
     margin-left: 10px;
     background-color: #F0F0F0;
 }
@@ -180,14 +182,24 @@ body {
 .banner-home-page {
     width: 100%;
     display: flex;
-    justify-content:center;
+    justify-content: center;
     align-items: center;
-    background-color: #F0F0F0;
-    background-image: url(./assets/images/home-banner.png);
+    background-color: #F2F0F1;
+}
+
+.banner-home-page-container {
+    width: 100%;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    /*background-image: url(./assets/images/home-banner.png);
     background-repeat: no-repeat;
     background-position: center;
-    background-size:contain;
+    background-size: contain;*/
     height: 663px;
+    max-width: 1240px;
+    margin-right: auto;
+    margin-left: auto;
 }
 
 .banner-info-container {
@@ -199,14 +211,11 @@ body {
     max-width: 650px;
 }
 
-.horizontal-separator {
-    width: 44%;
-}
-
 .banner-title {
     font-family: "Integralcf";
     font-weight: bold;
     font-size: 64px;
+    line-height: 64px;
     color: #000000;
     margin-bottom: 32px;
     margin-top: 103px;
@@ -216,17 +225,18 @@ body {
     font-family: "Satoshi";
     font-weight: normal;
     font-size: 16px;
+    line-height: 20px;
     color: #00000099;
     margin-bottom: 32px;
 }
 
 .btn-shop-now {
     font-family: "Satoshi";
-    font-weight: medium;
+    font-weight: normal;
     font-size: 16px;
     color: #FFFFFF;
     background-color: #000000;
-    border-radius: 60px;
+    border-radius: 62px;
     width: 100%;
     max-width: 210px;
     height: 52px;
@@ -239,7 +249,6 @@ body {
     justify-content: space-between;
     align-items: center;
     margin-top: 48px;
-    gap: 103px;
     margin-bottom: 116px;
 }
 
@@ -249,6 +258,12 @@ body {
     justify-content: center;
     align-items: flex-start;
     gap: 5px;
+}
+
+.vertical-separator {
+    width: 1px;
+    height: 65px;
+    background-color: #0000001A;
 }
 
 .stat-number {
@@ -268,6 +283,23 @@ body {
     margin: 0;
 }
 
+.banner-image-container {
+    width: 50%;
+    height: 663px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+}
+
+.banner-image {
+    width: 100%;
+    height: 663px;
+}
+
+.banner-image-mobile {
+    display: none;
+}
+
 .brands {
     display: flex;
     justify-content: center;
@@ -282,12 +314,374 @@ body {
     justify-content: space-between;
     align-items: center;
     width: 100%;
-    max-width: 1440px;
+    max-width: 1240px;
     margin-right: auto;
     margin-left: auto;
     height: 100%;
     flex-wrap: wrap;
 }
+
+.brand1 {
+    width: 167px;
+    height: 33px;
+}
+
+.brand2 {
+    width: 91px;
+    height: 38px;
+}
+
+.brand3 {
+    width: 156px;
+    height: 36px;
+}
+
+.brand4 {
+    width: 194px;
+    height: 32px;
+}
+
+.brand5 {
+    width: 207px;
+    height: 33px;
+}
+
+.new-arrivals, .top-selling {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+
+}
+
+.new-arrivals-container, .top-selling-container {
+    font-family: "Integralcf";
+    font-weight: bold;
+    font-size: 48px;
+    display: flex;
+    justify-content: center;
+    width: 100%;
+    max-width: 1240px;
+    margin-right: auto;
+    margin-left: auto;
+    flex-direction: column;
+    align-items: center;
+}
+
+.new-arrivals-container {
+    border-bottom: 1px solid #0000001A;
+}
+
+.new-arrivals-title, .top-selling-title {
+    text-align: center;
+    font-family: "Integralcf";
+    font-weight: bold;
+    font-size: 48px;
+    color: #000000;
+    margin-bottom: 55px;
+}
+
+.new-arrivals-cards-container, .top-selling-cards-container {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    width: 100%;
+    max-width: 1240px;
+    margin-right: auto;
+    margin-left: auto;
+    gap: 20px;
+    overflow-x: auto;
+}
+
+.product-card {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    flex-direction: column;
+    width: 295px;
+    gap: 8px;
+}
+
+.product-image {
+    width: 295px;
+    height: 298px;
+    border-radius: 20px;
+    margin-bottom: 8px;
+}
+
+.product-name {
+    font-family: "Satoshi";
+    font-weight: bold;
+    font-size: 20px;
+    color: #000000;    
+    text-decoration: none;
+    text-align: start;
+    width: 100%;
+}
+
+.product-name:hover {
+    color: #817d7d;
+    text-decoration: none;
+    cursor: pointer;
+}
+
+/* Container das estrelas */
+.stars-rating {
+    display: flex;
+    font-size: 0; /* Remove espaçamento entre estrelas */
+    position: relative;
+    font-family: "Satoshi";
+    align-items: center;
+    width: 100%;
+}
+
+/* Estilo geral das estrelas */
+.star {
+    display: inline-block;
+    width: 16px;
+    height: 16px;
+    background-color: #FFFFFF; /* Cor da estrela não preenchida */
+    clip-path: polygon(50% 0%, 61% 35%, 98% 35%, 68% 57%, 79% 91%, 50% 70%, 21% 91%, 32% 57%, 2% 35%, 39% 35%);
+    margin-right: 1px;
+}
+
+/* Estrela preenchida */
+.star.filled {
+    background-color: #FFC633;
+}
+
+/* Meia estrela */
+.star.half-filled {
+    background: linear-gradient(90deg, #FFC633 50%, #FFFFFF 50%);
+    background-clip: content-box;
+}
+
+.stars-rating-text {
+    font-family: "Satoshi";
+    font-weight: bold;
+    font-size: 12px;
+    color: #000000;
+    margin-left: 13px;
+}
+
+.stars-rating-text-light {
+    font-weight: normal;
+    color: #000000;
+
+}
+
+.product-price-container {
+    display: flex;
+    justify-content: flex-start;
+    gap: 10px;
+    align-items: center;
+    width: 100%;
+    margin-bottom: 16px;
+}
+
+.product-price {
+    font-family: "Satoshi";
+    font-weight: bold;
+    font-size: 24px;
+    color: #000000;
+}
+
+.product-price-old {
+    font-family: "Satoshi";
+    font-weight: bold;
+    font-size: 24px;
+    color: #00000066;
+    text-decoration: line-through;
+}
+
+.product-discount {
+    display: flex;
+    flex-direction: row;
+    gap: 12px;
+    font-family: "Satoshi";
+    font-weight: normal;
+    font-size: 12px;
+    color: #FF3333;
+    background-color: #FF33331A;
+    padding: 6px 14px;
+    border-radius: 62px;
+}
+
+.btn-view-all {
+    font-family: "Satoshi";
+    font-weight: bold;
+    font-size: 16px;
+    color: #000000;
+    background-color: #FFFFFF;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 218px;
+    height: 52px;
+    border-radius: 62px;
+    padding: 16px 54px;
+    border: 1px solid #0000001A;
+    margin-top: 36px;
+    margin-bottom: 64px;
+}
+
+.btn-view-all:hover {
+    background-color: #000000;
+    color: #FFFFFF;
+    cursor: pointer;
+}
+
+.dress-style {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    margin-top: 16px;
+    margin-bottom: 80px;
+}
+
+.dress-style-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+    max-width: 1240px;
+    margin-right: auto;
+    margin-left: auto;
+    flex-direction: column;
+    background-color: #F0F0F0;
+    border-radius: 40px;
+    padding-bottom: 64px;
+}
+
+.dress-style-title {
+    font-family: "Integralcf";
+    font-weight: bold;
+    font-size: 48px;
+    color: #000000;
+}
+
+.dress-style-buttons-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    width: 100%;
+    gap: 24px;
+}
+
+/* Container principal das avaliações */
+.customer-reviews {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    width: 100%;
+}
+
+/* Cabeçalho da seção de avaliações */
+.customer-reviews-container {
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-direction: column;
+    width: 100%;
+    max-width: 1240px;
+    margin: 0 auto;
+}
+
+.customer-reviews-header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin-bottom: 20px;
+    width: 100%;
+}
+
+/* Título das avaliações */
+.customer-reviews-title {
+    text-align: center;
+    margin: 0;
+    margin-block: 0;
+    font-family: "Integralcf";
+    font-weight: bold;
+    font-size: 48px;
+    color: #000000;
+}
+
+/* Botões de navegação */
+.review-nav-buttons {
+    display: flex;
+    gap: 10px;
+}
+
+.nav-button {
+    background: none;
+    border: none;
+    cursor: pointer;
+    padding: 5px;
+}
+
+.nav-button img {
+    width: 24px;
+    height: 24px;
+}
+
+/* Container dos cards */
+.customer-reviews-cards-container {
+    display: flex;
+    overflow-x: auto;
+    scroll-behavior: smooth;
+    padding-bottom: 10px;
+    max-width: 1240px;
+    margin: 0 auto;
+    -ms-overflow-style: none;  /* Esconde a barra de rolagem no Internet Explorer e Edge */
+    scrollbar-width: none;  /* Esconde a barra de rolagem no Firefox */
+}
+
+.customer-reviews-cards-container::-webkit-scrollbar {
+    display: none; /* Esconde a barra de rolagem no Chrome, Safari e Opera */
+}
+
+.customer-review-card {
+    flex: 0 0 auto;
+    width: 300px;
+    border: 1px solid #0000001A;
+    padding: 15px;
+    border-radius: 8px;
+    box-shadow: 0 2px 5px #0000001A;
+    background-color: #FFFFFF;
+    margin-right: 10px;
+}
+
+/* Estilo das estrelas, nome, verificado e texto */
+.customer-review-header,
+.stars-rating,
+.customer-review-text {
+    margin-bottom: 10px;
+}
+
+.customer-review-header {
+    font-family: "Satoshi";
+    display: flex;
+    align-items: center;
+    margin-bottom: 10px;
+    gap: 8px;
+}
+
+.customer-review-name {
+    font-size: 20px;
+    font-weight: bold;
+}
+
+.customer-review-text {
+    font-family: "Satoshi";
+    font-size: 16px;
+    line-height: 22px;
+    color: #00000099;
+}
+
+
 
 
 
@@ -347,11 +741,13 @@ body {
 
     .navbar__items {
         flex-direction: column;
-        width: 90%;
+        width: 100%;
         top: 90px;
         transition: 0.3s;
         position: absolute;
         background-color: #FFFFFF;
+        left: 0;
+        padding: 20px;
     }
 
     .navbar__link-toggle {
@@ -410,11 +806,206 @@ body {
         max-width: none;
         margin-right: auto;
         margin-left: auto;
+        margin-bottom: 10px;
     }
 
     .search-input-mobile {
         width: 90%;
         max-width: none;
 
+    }
+
+    .banner-home-page {
+        height: auto;
+    }
+
+    .banner-home-page-container {
+        flex-direction: column;
+        background-color: #F0F0F0;
+        background-image: none;
+        height: auto;
+        align-items: flex-start;
+    }
+
+    .banner-image-mobile {
+        display: flex;
+        width: 100%;
+        margin-right: auto;
+        margin-left: auto;
+    }
+
+    .banner-image-container {
+        display: none;
+    }
+
+    .banner-info-container {
+        width: 100%;
+    }
+
+    .horizontal-separator {
+        display: none;
+    }
+
+    .banner-title {
+        font-size: 36px;
+        line-height: 34px;
+        margin-top: 40px;
+        margin-right: 59px;
+        margin-left: 16px;
+    }
+
+    .banner-description {
+        font-size: 14px;
+        line-height: 20px;
+        margin-top: 20px;
+        margin-left: 16px;
+        margin-right: 16px;
+        margin-bottom: 24px;
+    }
+
+    .btn-shop-now {
+        max-width: none;
+        width: 90%;
+        margin-left: 16px;
+        margin-right: 16px;
+        margin-top: 0;
+    }
+
+    .stats-container {
+        justify-content: center;
+        gap: 55px;
+        flex-wrap: wrap;
+        margin-bottom: -5px;
+        z-index: 1;
+    }
+
+    .brands-container {
+        justify-content: center;
+        max-width: none;
+        width: 90%;
+        margin-left: auto;
+        margin-right: auto;
+        gap: 34px;
+        padding: 39px 16px;
+        height: auto;
+    }
+
+    .brand1 {
+        width: 117px;
+        height: 23px;
+    }
+
+    .brand2 {
+        width: 64px;
+        height: 26px;
+    }
+
+    .brand3 {
+        width: 110px;
+        height: 25px;
+    }
+
+    .brand4 {
+        width: 127px;
+        height: 21px;
+    }
+
+    .brand5 {
+        width: 135px;
+        height: 22px;
+    }
+
+    .new-arrivals-container, .top-selling-container {
+        width: 90%;
+        max-width: none;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .new-arrivals-title, .top-selling-title {
+        font-size: 32px;
+    }
+
+    .product-image {
+        width: 198px;
+        height: 200px;
+        border-radius: 14px;
+    }
+
+    .product-name {
+        font-size: 16px;
+    }
+
+    .star {
+        width: 14px;
+        height: 14px;
+    }
+
+    .stars-rating-text {
+        font-size: 10px;
+    }
+
+    .product-price {
+        font-size: 20px;
+    }
+
+    .product-price-old {
+        font-size: 20px;
+    }
+
+    .product-discount {
+        font-size: 10px;
+        padding: 4px 6px;
+    }
+
+    .dress-style {
+        margin-top: 40px;
+        margin-bottom: 40px;
+        padding: 16px 0;
+    }
+
+    .dress-style-container {
+        width: 90%;
+        max-width: none;       
+        flex-direction: column;
+        padding: 14px 0 28px 0;
+
+    }
+
+    .dress-style-title {
+        font-size: 32px;
+        text-align: center;
+    }
+
+    .dress-style-buttons-container {
+        width: 100%;
+        justify-content: center;
+        gap: 10px;
+        flex-direction: column;
+    }
+
+    .dress-style-buttons-container a img {
+        width: 310px;
+        height: 190px;
+    }
+
+    .separator2 {
+        display: none;
+    }
+
+    .customer-reviews-container {
+        width: 90%;
+        max-width: none;
+        margin-left: auto;
+        margin-right: auto;
+    }
+
+    .customer-reviews-title {
+        font-size: 32px;
+        text-align: start;
+    }
+
+    .customer-reviews-cards-container {
+        max-width: 340px;
     }
 }
