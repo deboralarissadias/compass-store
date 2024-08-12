@@ -30,7 +30,7 @@ function animateValue(id, start, end, duration) {
     
     let timer = setInterval(function() {
         current += increment;
-        obj.textContent = current + "+";
+        obj.textContent = current.toLocaleString("en") + "+";
         if (current == end) {
             clearInterval(timer);
         }
