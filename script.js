@@ -336,23 +336,34 @@ function centerScrollPosition(container, visibleCards = 0) {
   }
 }
 
-
 generateCustomerReviews();
 
 document.getElementById('subscribe-btn').addEventListener('click', function(event) {
   var emailInput = document.getElementById('email-input');
   var emailError = document.getElementById('email-error');
+  var subscribeBtn = document.getElementById('subscribe-btn');
 
-  // Regex to validate email
+  // Regex para validar o email
 
-  // stack overflow
+  //stackoverflow
   var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
   if (!emailPattern.test(emailInput.value)) {
       emailError.style.display = 'block';
-      event.preventDefault(); // Prevent form submission
+      subscribeBtn.style.display = 'none';
+      event.preventDefault(); // Prevenir o envio do formulário
   } else {
       emailError.style.display = 'none';
-      // Proceed with form submission or further actions
+      subscribeBtn.style.display = 'block';
+      
   }
+});
+
+// Esconder o alerta e mostrar o botão quando o usuário começar a digitar no campo de email
+document.getElementById('email-input').addEventListener('input', function() {
+  var emailError = document.getElementById('email-error');
+  var subscribeBtn = document.getElementById('subscribe-btn');
+
+  emailError.style.display = 'none';
+  subscribeBtn.style.display = 'block';
 });
