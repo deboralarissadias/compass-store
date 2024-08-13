@@ -276,6 +276,9 @@ function generateCustomerReviews() {
   const container = document.getElementById("customer-reviews-cards-container");
   container.innerHTML = ""; // Limpa qualquer conteúdo existente
 
+  // Detecta o tamanho da tela
+  const isMobile = window.innerWidth < 992;
+
   customerReviews.forEach((review) => {
     const card = `
         <div class="customer-review-card">
@@ -298,23 +301,43 @@ function generateCustomerReviews() {
     container.insertAdjacentHTML("beforeend", card);
   });
 
+  // Ajuste o scroll no início para centralizar
+  if (isMobile) {
+    centerScrollPosition(container, 1); // Centralizar o primeiro comentário
+  } else {
+    centerScrollPosition(container, 0);
+  }
+
   // Botões de navegação
   document.querySelector(".nav-button.left").addEventListener("click", () => {
-    container.scrollLeft -= 300; // Ajuste a distância conforme necessário
+    if (isMobile) {
+      container.scrollLeft -= container.clientWidth; // Ajusta a distância conforme necessário
+    } else {
+      container.scrollLeft -= 300; // Ajusta a distância conforme necessário
+    }
   });
 
   document.querySelector(".nav-button.right").addEventListener("click", () => {
-    container.scrollLeft += 300; // Ajuste a distância conforme necessário
+    if (isMobile) {
+      container.scrollLeft += container.clientWidth; // Ajusta a distância conforme necessário
+    } else {
+      container.scrollLeft += 300; // Ajusta a distância conforme necessário
+    }
   });
 }
 
-function centerScrollPosition() {
+function centerScrollPosition(container, visibleCards = 0) {
+  if (visibleCards === 0) {
     const container = document.getElementById("customer-reviews-cards-container");
     container.scrollLeft = (container.scrollWidth - container.clientWidth) / 2;
+  } else {
+    const cardWidth = container.querySelector('.customer-review-card').offsetWidth;
+    container.scrollLeft = (cardWidth * visibleCards - container.clientWidth) / 2;
+  }
 }
 
+
 generateCustomerReviews();
-centerScrollPosition();
 
 document.getElementById('subscribe-btn').addEventListener('click', function(event) {
   var emailInput = document.getElementById('email-input');

@@ -790,8 +790,70 @@ body {
     background-color: #817d7d;
     color: white;
     cursor: pointer;
+}
+
+.footer-top {
+    background-color: #F0F0F0;
+    padding-top: 110px;
+    padding-bottom: 88px;
+    padding-left: 101px;
+    padding-right: 101px;
+    margin-top: -160px;
+}
+
+.footer-top-container {
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    align-items: center;
+    max-width: 1240px;
+    margin-left: auto;
+    margin-right: auto;
 
 }
+
+.footer-top-description {
+    font-family: "Satoshi";
+    font-weight: normal;
+    font-size: 12px;
+    color: #999999;
+    width: 100%;
+    max-width: 215px;
+    height: 66px;
+
+}
+
+.footer-top-right h4 {
+    font-family: "Satoshi";
+    font-weight: bold;
+    font-size: 16px;
+    color: #000000;
+
+}
+
+.footer-top-right dl dt {
+    color: #00000099;
+    font-family: "Satoshi";
+    font-weight: normal;
+    font-size: 16px;
+
+}
+
+.footer-top-right dl dt a {
+    text-decoration: none;
+    color: #00000099;
+}
+
+.footer-top-right dl dt a:hover {
+    color: #000000;
+    cursor: pointer;
+}
+
+.footer-top-social {
+    display: flex;
+    gap: 10px;
+}
+
 
 
 
@@ -1139,7 +1201,7 @@ body {
         margin-right: auto;
         flex-direction: column;
         gap: 20px;
-        height: 293px;
+        height: auto;
     }
 
     .newsletter-title {
