@@ -191,14 +191,15 @@
     <section class="newsletter">
         <div class="newsletter-container">
             <h1 class="newsletter-title">STAY UPTO DATE ABOUT OUR LATEST OFFERS</h1>
-            <div class="newsletter-buttons-container" >
+            <div class="newsletter-buttons-container">
                 <div class="newsletter-input-container">
                     <i class="icon-email">
                         <img src="./assets/images/icons/email.svg" alt="email" width="18">
                     </i>
-                    <input type="email" class="email-input" placeholder="Enter your email address" />
+                    <input type="email" id="email-input" class="email-input" placeholder="Enter your email address" required />
                 </div>
-                <button class="btn-subscribe">Subscribe to Newsletter</button>
+                <button class="btn-subscribe" id="subscribe-btn">Subscribe to Newsletter</button>
+                <div id="email-error">Please enter a valid email address.</div>
             </div>
         </div>
     </section>

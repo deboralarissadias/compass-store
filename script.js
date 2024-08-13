@@ -315,3 +315,21 @@ function centerScrollPosition() {
 
 generateCustomerReviews();
 centerScrollPosition();
+
+document.getElementById('subscribe-btn').addEventListener('click', function(event) {
+  var emailInput = document.getElementById('email-input');
+  var emailError = document.getElementById('email-error');
+
+  // Regex to validate email
+
+  // stack overflow
+  var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
+
+  if (!emailPattern.test(emailInput.value)) {
+      emailError.style.display = 'block';
+      event.preventDefault(); // Prevent form submission
+  } else {
+      emailError.style.display = 'none';
+      // Proceed with form submission or further actions
+  }
+});
