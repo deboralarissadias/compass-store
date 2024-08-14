@@ -1270,12 +1270,15 @@ body {
         margin-right: auto;
         flex-direction: column;
         align-items: flex-start;
+        
+
     }
 
     .footer-right-container {
         justify-content: flex-start;
         column-gap: 60px;
         row-gap: 24px;
+
     }
 
     .footer-right {
@@ -1285,4 +1288,24 @@ body {
     .footer-description {
         height: auto;
     }
+
+    .footer-copy-container {
+        margin-top: 25px;
+        display: flex;
+        width: 100%;
+        flex-direction: column;
+        max-width: 410px;
+        align-items: center;
+        
+    }
+
+    .footer-copy {
+        font-family: "Satoshi";
+        font-weight: normal;
+        font-size: 14px;
+        color: #00000099;
+    }
+
 }
+
+    
