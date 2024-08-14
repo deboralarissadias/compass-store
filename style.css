@@ -799,7 +799,7 @@ body {
     width: 100%;
     background-color: #F0F0F0;
     padding-top: 110px;
-    padding-bottom: 88px;
+    padding-bottom: 60px;
     margin-top: -160px;
     flex-direction: column;
 }
@@ -826,13 +826,13 @@ body {
     width: 100%;
     max-width: 275px;
     height: 66px;
-
 }
 
 .footer-left {
     display: flex;
     flex-direction: column;
     justify-content: center;
+    margin-bottom: 30px;
 }
 
 .footer-right-container {
@@ -855,7 +855,6 @@ body {
     font-size: 16px;
     color: #000000;
     margin-block: 0;
-
 }
 
 .footer-right dl dt {
@@ -863,8 +862,9 @@ body {
     font-family: "Satoshi";
     font-weight: normal;
     font-size: 16px;
-
+    margin-bottom: 10px;
 }
+
 
 .footer-right dl dt a {
     text-decoration: none;
@@ -879,6 +879,22 @@ body {
 .footer-social {
     display: flex;
     gap: 10px;
+}
+
+.footer-copy-container {
+    margin-top: 25px;
+    display: flex;
+    width: 100%;
+    justify-content: space-between;
+    max-width: 1240px;
+    
+}
+
+.footer-copy {
+    font-family: "Satoshi";
+    font-weight: normal;
+    font-size: 14px;
+    color: #00000099;
 }
 
 
