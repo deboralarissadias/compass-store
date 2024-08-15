@@ -243,6 +243,13 @@ body {
     height: 52px;
 }
 
+.btn-shop-now:hover {
+    background-color: #FFFFFF;
+    color:#000000;
+    cursor: pointer;
+    border: 1px solid #0000001A;
+}
+
 .stats-container {
     display: flex;
     flex-direction: row;
@@ -1075,7 +1082,7 @@ body {
     .banner-description {
         font-size: 14px;
         line-height: 20px;
-        margin-top: 20px;
+        margin-top: 0px;
         margin-left: 16px;
         margin-right: 16px;
         margin-bottom: 24px;
@@ -1087,7 +1094,9 @@ body {
         margin-left: 16px;
         margin-right: 16px;
         margin-top: 0;
+
     }
+
 
     .stats-container {
         justify-content: center;
@@ -1095,6 +1104,7 @@ body {
         flex-wrap: wrap;
         margin-bottom: -5px;
         z-index: 1;
+        margin-top: 20px;
     }
 
     .stat-number {
@@ -1152,6 +1162,10 @@ body {
         font-size: 32px;
     }
 
+    .btn-view-all {
+        margin-bottom: 25px;
+    }
+
     .product-image {
         width: 198px;
         height: 200px;
@@ -1200,12 +1214,15 @@ body {
         max-width: none;       
         flex-direction: column;
         padding: 14px 0 28px 0;
+        
+
 
     }
 
     .dress-style-title {
         font-size: 32px;
         text-align: center;
+        width: 250px;
     }
 
     .dress-style-buttons-container {
@@ -1240,6 +1257,10 @@ body {
         max-width: 340px;
     }
 
+    .newsletter {
+        margin-top: 50px;
+    }
+
     .newsletter-container {
         width: 90%;
         max-width: none;
@@ -1253,7 +1274,7 @@ body {
     .newsletter-title {
         font-size: 32px;
         margin: auto;
-        width: 80%;
+        width: 90%;
         margin-top: 30px;
         margin-bottom: 10px;
     }
@@ -1264,8 +1285,14 @@ body {
         margin-bottom: 28px;
         margin-left: auto;
         margin-right: auto;
+        
     }
     
+    .footer {
+        margin-top: -220px;
+
+    }
+
     .footer-container {
         width: 90%;
         max-width: none;
@@ -1273,19 +1300,25 @@ body {
         margin-right: auto;
         flex-direction: column;
         align-items: flex-start;
-        
+        margin-top: 70px;
+        gap: 0;
+    }
 
+    .footer-left {
+        
+        
     }
 
     .footer-right-container {
         justify-content: flex-start;
-        column-gap: 60px;
-        row-gap: 24px;
+        column-gap: 30px;
+        row-gap: 0px;
+        
 
     }
 
     .footer-right {
-        width: 120px;
+        width: 150px;
     }
 
     .footer-description {
