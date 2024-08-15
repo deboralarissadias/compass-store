@@ -676,12 +676,13 @@ body {
 }
 
 .customer-review-name {
-    font-size: 20px;
+    font-size: 18px;
     font-weight: bold;
 }
 
 .customer-review-text {
     font-family: "Satoshi";
+    font-weight: normal;
     font-size: 16px;
     line-height: 22px;
     color: #00000099;

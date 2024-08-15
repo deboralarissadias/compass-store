@@ -90,7 +90,7 @@ const productsOne = [
       value: 0,
       formatted_price: "$0",
     },
-    image_url: "./assets/images/products/product4.png",
+    image_url: "./assets/images/products/product3.png",
   },
   {
     id: "3",
@@ -105,7 +105,7 @@ const productsOne = [
       value: 130,
       formatted_price: "$130",
     },
-    image_url: "./assets/images/products/product1.png",
+    image_url: "./assets/images/products/product4.png",
   },
 ];
 
@@ -221,7 +221,7 @@ function generateStarsRating(rating, showrating) {
   }
 
   if (showrating) {
-    return `${stars} <span class="stars-rating-text">${rating}<span class="stars-rating-text-light">/5</span></span>`;
+    return `${stars} <span class="stars-rating-text">${rating.toFixed(1)}<span class="stars-rating-text-light">/5</span></span>`;
   } else {
     return stars;
   }
@@ -240,35 +240,35 @@ const customerReviews = [
     rating_review: 5,
     name: "Sarah M.",
     verified: true,
-    text: "I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations.",
+    text: "\"I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations.\"",
   },
   {
     id: "00001",
     rating_review: 5,
     name: "Sarah M.",
     verified: true,
-    text: "I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations.",
+    text: "\"I'm blown away by the quality and style of the clothes I received from Shop.co. From casual wear to elegant dresses, every piece I've bought has exceeded my expectations.\"",
   },
   {
     id: "00002",
     rating_review: 5,
     name: "Alex K.",
     verified: true,
-    text: "Finding clothes that align with my personal style used to be a challenge until I discovered Shop.co. The range of options they offer is truly remarkable, catering to a variety of tastes and occasions.",
+    text: "\"Finding clothes that align with my personal style used to be a challenge until I discovered Shop.co. The range of options they offer is truly remarkable, catering to a variety of tastes and occasions.\"",
   },
   {
     id: "00003",
     rating_review: 5,
     name: "James L.",
     verified: true,
-    text: "As someone who's always on the lookout for unique fashion pieces, I'm thrilled to have stumbled upon Shop.co. The selection of clothes is not only diverse but also on-point with the latest trends.",
+    text: "\"As someone who's always on the lookout for unique fashion pieces, I'm thrilled to have stumbled upon Shop.co. The selection of clothes is not only diverse but also on-point with the latest trends.\"",
   },
   {
     id: "00004",
     rating_review: 5,
     name: "Mooen P.",
     verified: true,
-    text: "As someone who's always on the lookout for unique fashion pieces, I'm thrilled to have stumbled upon Shop.co. The selection of clothes is not only diverse but also on-point with the latest trends.",
+    text: "\"As someone who's always on the lookout for unique fashion pieces, I'm thrilled to have stumbled upon Shop.co. The selection of clothes is not only diverse but also on-point with the latest trends.\"",
   },
 ];
 
