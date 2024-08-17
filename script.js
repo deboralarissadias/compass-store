@@ -1,8 +1,9 @@
-// Funcionalidade de fechar a div de promoção
+// Funcionalidade de fechar a div de promoção preta fina
 function closeHeaderTop() {
   document.querySelector(".header-top").style.display = "none";
 }
 
+// Funcionalidade do navbar mobile
 function menuHamburger() {
   var navs = document.querySelectorAll(".navbar__items");
 
@@ -11,6 +12,7 @@ function menuHamburger() {
 
 document.querySelector(".navbar__link-toggle").addEventListener("click", menuHamburger);
 
+// Funcionalidade da caixa de pesquisa
 function openSearch() {
     var searchContainer = document.querySelector(".search-container-mobile");
     if (searchContainer.style.display === "flex") {
@@ -20,11 +22,11 @@ function openSearch() {
     }
 }
 
-
+// Funcionalidade do contador númerico
 function animateValue(id, start, end, duration) {
     let range = end - start;
     let current = start;
-    let increment = end > start ? 1 : -1;
+    let increment = end > start ? 1 : -1; // Fiz o uso do ternário para definir o incremento de quanto vai subir
     let stepTime = Math.abs(Math.floor(duration / range));
     let obj = document.getElementById(id);
     
@@ -106,6 +108,7 @@ const productsOne = [
   },
 ];
 
+//Array com todos os produtos da seção product 2
 const productsTwo = [
   {
     id: "5",
@@ -205,6 +208,7 @@ function generateProductCards(products, id) {
   });
 }
 
+// Função para gerar o HTML das estrelas
 function generateStarsRating(rating, showrating) {
   let stars = "";
   for (let i = 1; i <= 5; i++) {
@@ -224,13 +228,13 @@ function generateStarsRating(rating, showrating) {
   }
 }
   
-// Renderizando os produtos da New Arrivals section
+// Inserindo os produtos da New Arrivals section
 generateProductCards(productsOne, "new-arrivals-cards-container");
 
-// Renderizando os produtos da Top Selling section
+// Inserindo os produtos da Top Selling section
 generateProductCards(productsTwo, "top-selling-cards-container");
 
-// Array de reviews dos consumidores
+// Array de comentários dos consumidores
 const customerReviews = [
   {
     id: "00000",
@@ -273,7 +277,7 @@ function generateCustomerReviews() {
   const container = document.getElementById("customer-reviews-cards-container");
   container.innerHTML = ""; // Limpa qualquer conteúdo existente
 
-  // Detecta o tamanho da tela
+  // Detecta o tamanho da tela e define se é responsivo
   const isMobile = window.innerWidth < 992;
 
   customerReviews.forEach((review) => {
@@ -298,14 +302,14 @@ function generateCustomerReviews() {
     container.insertAdjacentHTML("beforeend", card);
   });
 
-  // Ajuste o scroll no início para centralizar
+  // Ajuste a barra de rolagem dos comentários no início para centralizar 
   if (isMobile) {
     centerScrollPosition(container, 1); // Centralizar o primeiro comentário
   } else {
     centerScrollPosition(container, 0);
   }
 
-  // Botões de navegação
+  // Funcionalidade dos botões de navegação setas
   document.querySelector(".nav-button.left").addEventListener("click", () => {
     if (isMobile) {
       container.scrollLeft -= container.clientWidth; // Ajusta a distância conforme necessário
@@ -335,6 +339,7 @@ function centerScrollPosition(container, visibleCards = 0) {
 
 generateCustomerReviews();
 
+// Validação do campo de email
 document.getElementById('subscribe-btn').addEventListener('click', function(event) {
   var emailInput = document.getElementById('email-input');
   var emailError = document.getElementById('email-error');
