@@ -36,14 +36,11 @@ function animateValue(id, start, end, duration) {
         }
     }, stepTime);
 }
-
 window.onload = function() {
     animateValue("stat1", 0, 200, 2000);   
     animateValue("stat2", 0, 2000, 2000);  
     animateValue("stat3", 28000, 30000, 2000);
 };
-
-
 
 //Array com todos os produtos da seção product 1
 const productsOne = [
