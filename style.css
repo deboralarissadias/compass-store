@@ -1313,6 +1313,8 @@ body {
 
     .footer-description {
         height: auto;
+        max-width: 330px;
+        font-size: 14px;
     }
 
     .footer-copy-container {
@@ -1329,6 +1331,16 @@ body {
         font-weight: normal;
         font-size: 14px;
         color: #00000099;
+    }
+
+    .footer-cards-container {
+        display: flex;
+        justify-content: center;
+        align-items: center;
+    }
+
+    .footer-cards-container img {
+        width: 51px;
     }
 }
 
