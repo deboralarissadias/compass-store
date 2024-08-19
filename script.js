@@ -12,7 +12,7 @@ function menuHamburger() {
 
 document.querySelector(".navbar__link-toggle").addEventListener("click", menuHamburger);
 
-// Funcionalidade da caixa de pesquisa
+// Estilo da caixa de pesquisa de forma responsiva
 function openSearch() {
     var searchContainer = document.querySelector(".search-container-mobile");
     if (searchContainer.style.display === "flex") {
@@ -38,6 +38,7 @@ function animateValue(id, start, end, duration) {
         }
     }, stepTime);
 }
+
 window.onload = function() {
     animateValue("stat1", 0, 200, 2000);   
     animateValue("stat2", 0, 2000, 2000);  
@@ -346,8 +347,7 @@ document.getElementById('subscribe-btn').addEventListener('click', function(even
   var subscribeBtn = document.getElementById('subscribe-btn');
 
   // Regex para validar o email
-
-  //stackoverflow
+  //No stackoverflow encontrei o padrão do regex e a ideia de como validar o email
   var emailPattern = /^[^\s@]+@[^\s@]+\.[^\s@]+$/;
 
   if (!emailPattern.test(emailInput.value)) {

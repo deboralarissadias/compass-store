@@ -454,6 +454,7 @@ body {
 }
 
 /* Estilo geral das estrelas */
+/* CSS Clip-Path Generator usei apenas para o clip-path: polygon*/
 .star {
     display: inline-block;
     width: 16px;
@@ -675,7 +676,7 @@ body {
     margin-right: 10px;
 }
 
-/* Estilo das estrelas, nome, verificado e texto */
+/* Estilo das estrelas, nome, verificado verde e texto */
 .customer-review-header,
 .stars-rating,
 .customer-review-text {
@@ -879,7 +880,6 @@ body {
     font-size: 16px;
     margin-bottom: 10px;
 }
-
 
 .footer-right dl dt a {
     text-decoration: none;
